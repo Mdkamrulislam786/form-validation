@@ -1,10 +1,10 @@
 import React from 'react'
-
+import './Input.css'
 interface InputProps {
     type: string, placeholder: string, icon: string
 }
 
-const Input = ({ type, placeholder, icon }: InputProps) => {
+const LoginInput = ({ type, placeholder, icon }: InputProps) => {
     return (
         <div className="input-group input-group-icon">
             <input type={type} placeholder={placeholder} />
@@ -13,4 +13,4 @@ const Input = ({ type, placeholder, icon }: InputProps) => {
     )
 }
 
-export default Input
+export default LoginInput

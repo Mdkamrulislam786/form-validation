@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
 }
 
 .loginform_items {
@@ -13,27 +12,4 @@
     background-color: #fff;
     border-radius: 4.2px;
     box-shadow: 0px 3px 10px -2px rgb(0 0 0 / 20%);
-}
-
-.loginform__btn {
-    width: 100%;
-    padding: 1em;
-    line-height: 1.4;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    background-color: #7ed321;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 14px;
-    text-transform: uppercase;
-
-}
-
-.loginform__btn:hover {
-    background-color: lightgreen;
-}
-
-.loginform__btn:focus {
-    outline: none;
 }

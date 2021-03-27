@@ -1,0 +1,47 @@
+.form-inputs {
+    margin-bottom: 0.5rem;
+    width: 80%;
+}
+
+.form-inputs p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+}
+
+.form-label {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.form-input {
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    border: none;
+}
+
+.form-input::placeholder {
+    color: #595959;
+    font-size: 12px;
+}
+
+.form-input-login {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+}
+
+.form-input-login a {
+    text-decoration: none;
+    /* color: #27cdff; */
+    color: #7ed321;
+    font-weight: 600;
+}
