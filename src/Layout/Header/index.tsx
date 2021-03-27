@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom'
 import '../index.css'
 const Header = () => {
     let navitems = [{
-        to: '/',
+        to: "/",
+        text:"Task1"
+    },{
+        to: '/task2',
         text: 'Task2',
 
     },
