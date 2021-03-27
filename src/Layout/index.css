@@ -1,0 +1,20 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.layout__item a {
+    padding: 10px;
+    margin: 5px;
+    background-color: #7ed321;
+    color: #fff;
+
+    font-style: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 3px;
+}

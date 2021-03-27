@@ -3,8 +3,8 @@ import Input from '../Task2Template/Input/Input'
 import '../Task2Template/Template.css'
 import './LoginForm.css'
 const LoginForm = () => {
-    const handleSubmit = (e: any) => {
-        e.preventDefault()
+    const handleSubmit = (event: any) => {
+        event.preventDefault()
     }
 
     return (
@@ -16,7 +16,7 @@ const LoginForm = () => {
                     <Input type="email" placeholder="Email Adress" icon="fa fa-envelope" />
                     <Input type="password" placeholder="Password" icon="fa fa-key" />
                     <div>
-                        <button className="loginform__btn" type="submit">Submit</button>
+                        <button className="loginform__btn" type="submit">submit</button>
                     </div>
                     <p style={{ textAlign: 'center' }}>Forgot Password?</p>
                 </form>

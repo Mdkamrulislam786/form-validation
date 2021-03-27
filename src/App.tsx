@@ -1,13 +1,10 @@
-import React from 'react';
 import './App.css';
-import LoginForm from './Components/Task2/LoginForm';
+import Routes from './Routes';
 // import Template from './Components/Task2Template/Template';
 
 function App() {
   return (
-    <div className="App">
-      <LoginForm />
-    </div>
+    <Routes />
   );
 }
 
