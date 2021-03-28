@@ -9,14 +9,26 @@ import FormControlRight from '../FormControlRight';
 import Form from '../Form/Form';
 import H1 from '../H1';
 
-interface useFormProps {
-    handleChange: any, handleSubmit: any, values: any, errors: any
+//types defined
+interface ValueProps {
+    username: string;
+    email: string;
+    password: string;
+    password2: string;
 }
+
+interface useFormProps {
+    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => any, handleSubmit: (e: React.FormEvent<HTMLInputElement>) => any, errors: any, values: ValueProps
+}
+
 interface FormSignupProps {
     submitForm: any
 }
 
+//Comp-FormSignup
 const FormSignup = ({ submitForm }: FormSignupProps) => {
+
+    //useForm custom hook
     const { handleChange, handleSubmit, values, errors }: useFormProps = useForm(
         submitForm,
         validate

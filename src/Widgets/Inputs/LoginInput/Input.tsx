@@ -1,14 +1,17 @@
 import React from 'react'
 import './Input.css'
-interface InputProps {
-    type: string, placeholder: string, icon: string
-}
 
-const LoginInput = ({ type, placeholder, icon }: InputProps) => {
+const LoginInput = ({ type, placeholder, icon, onChange, value, name, errors }: any) => {
     return (
         <div className="input-group input-group-icon">
-            <input type={type} placeholder={placeholder} />
+            <input
+                type={type}
+                placeholder={placeholder}
+                name={name}
+                value={value}
+                onChange={onChange} />
             <div className="input-icon"><i className={icon}></i></div>
+            {errors && <p>{errors}</p>}
         </div>
     )
 }

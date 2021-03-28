@@ -1,4 +1,6 @@
+
 export default function validateInfo(values: any): {} {
+
     //all the errors stored/added here
     let errors: any = {};
     //to check if a password has 8 letter, with at least a symbol, upper and lower case letters and a number

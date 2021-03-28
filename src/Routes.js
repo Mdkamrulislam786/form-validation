@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Task1 from "./Components/Task1";
-import LoginForm from "./Components/Task2/LoginForm";
+import LoginPage from "./Components/Task2";
 import Template from "./Components/Task2Template/Template";
 import Layout from "./Layout";
 
@@ -10,7 +10,7 @@ const Routes = () => {
       <Layout>
         <Switch>
           <Route path="/" exact component={Task1} />
-          <Route path="/task2" exact component={LoginForm} />
+          <Route path="/task2" exact component={LoginPage} />
           <Route path="/template" exact component={Template} />
         </Switch>
       </Layout>

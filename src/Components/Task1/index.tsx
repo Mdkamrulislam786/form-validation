@@ -8,21 +8,19 @@ import './index.css'
 const Task1 = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    function submitForm() {
+    const submitForm = () => {
         setIsSubmitted(true);
     }
 
     return (
-        <>
-            <FormContainer>
-                <FormContentLeft />
-                {!isSubmitted ? (
-                    <FormSignup submitForm={submitForm} />
-                ) : (
-                    <FormSuccess />
-                )}
-            </FormContainer>
-        </>
+        <FormContainer>
+            <FormContentLeft />
+            {!isSubmitted ? (
+                <FormSignup submitForm={submitForm} />
+            ) : (
+                <FormSuccess />
+            )}
+        </FormContainer>
     );
 };
 

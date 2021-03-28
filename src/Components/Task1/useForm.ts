@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const useForm = (callback: any, validate: any) => {
     const [values, setValues] = useState({
@@ -10,29 +10,28 @@ const useForm = (callback: any, validate: any) => {
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleChange = (e: any) => {
+    //HandleChange
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>): any => {
         const { name, value } = e.target;
         setValues({
             ...values,
             [name]: value
         });
     };
-
-    const handleSubmit = (e: any) => {
+    //Handle submit
+    const handleSubmit = (e: React.FormEvent<HTMLInputElement>): any => {
         e.preventDefault();
-
         setErrors(validate(values));
         setIsSubmitting(true);
+        console.log('submited');
     };
 
-    useEffect(
-        () => {
-            if (Object.keys(errors).length === 0 && isSubmitting) {
-                callback();
-            }
-        },
-        [errors, callback, isSubmitting]
-    );
+    useEffect(() => {
+        if (Object.keys(errors).length === 0 && isSubmitting) {
+            callback();
+            console.log('callback has run');
+        }
+    }, [errors, callback, isSubmitting]);
 
     return { handleChange, handleSubmit, values, errors };
 };
